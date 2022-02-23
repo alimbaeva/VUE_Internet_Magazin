@@ -1,0 +1,100 @@
+@import '../vars';
+
+.choose-page {
+    height: 600.18px;    
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    top: 935px;
+    border: 1px solid #EAEAEA;
+    position: absolute;
+    background: white;
+    right: 10%;
+
+    &__pay {
+        max-width: 641px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__title {
+        line-height: 17px;
+        color: $color-red;
+        margin: 64.13px 0 12px;
+    }
+
+    &__cub {
+        width: 63px;
+        height: 3.03px;
+        background: $color-red;
+        margin-bottom:12px ;
+    }
+
+    &__hero {
+        margin: 0 0 48.5px;
+        @include txt-mix (18px, 300, 22px, $dark-gray)
+    }
+
+    &__txt {
+        text-align: center;
+        margin: 0 0 32px;
+        @include txt-mix (14px, 300, 17px, $dark-gray)
+    }
+
+    &__number {
+        margin: 0 0 65px;
+        @include txt-mix (24px, 300, 29px, $color-red)
+    }
+
+    &__line {
+        width: 100%;
+        border: 1px solid $bkok-gray;
+    }
+
+    &__hidden {
+        display: flex;
+        justify-content: center;
+        margin-top: 35.91px;
+    }
+
+    &__add {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include btn-mix (211px, 47px, 1px solid $color-red, $white, 10px)
+    }
+
+    &__hidden-txt {
+        margin-left: 11px;
+        @include txt-mix (16px, 400, 19px, $color-red)
+    }
+
+    &__hidden:hover > &__add {
+        transition: .8s;
+        @include btn-mix (211px, 47px, 1px solid $color-red, $color-red, 10px)
+    }
+
+    &__hidden:hover  &__hidden-txt {
+        transition: .8s;
+        @include txt-mix (16px, 400, 19px, $white)
+    }
+
+    &__hidden:hover &__svg {
+        fill: white;
+        transition: .8s;
+    }
+
+    
+}
+
+.distance {
+    margin-top: 65px;
+}
+
+// .choose-page__hidden:hover + .choose-page__hidden-txt{
+//     background: $color-red;
+//     color: $white;
+//     fill: white;
+// }

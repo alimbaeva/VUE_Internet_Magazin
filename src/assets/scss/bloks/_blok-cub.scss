@@ -1,0 +1,139 @@
+@import "../vars";
+
+.blok {
+        width: 263px;
+        height: 43px;
+        margin: 0 auto;
+        border: 1px solid $bkok-gray;
+        padding: 14.5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+       
+        &__nav {
+            padding: 0 ;
+            display: flex;
+            list-style-type: none;
+        }
+
+        &__left-kub {
+            width: 10px;
+            height: 10px;
+            border-top: 2px solid $bkok-black;
+            border-left: 2px solid $bkok-black;
+            transform: rotateY(0deg) rotate(-45deg); 
+            cursor: pointer;
+        }
+
+        &__raight-kub {
+            width: 10px;
+            height: 10px;
+            border-top: 2px solid $bkok-black;
+            border-right: 2px solid $bkok-black;
+            transform: rotateY(0deg) rotate(45deg);
+            cursor: pointer;
+        }
+
+        &__link {   
+            margin-right: 19px;        
+            display: inline-block;       
+            @include txt-mix (16px, 300, 19px, $bkok-gray)
+        }
+
+        &__link:nth-last-child(1) {
+                     margin-right: 9px;
+                }
+
+        &__link-cerkle {
+            width: 30px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        &__link:hover {
+            color: $color-red;
+            font-size: 18px;
+            transition: .3s;
+        }
+
+        &__cerkle {
+            width: 3px;
+            height: 3px;
+            border: 1px solid $bkok-gray;
+            background: $bkok-gray;
+            border-radius: 100%;
+            margin-left: 2px;
+        }
+       
+}
+
+// .bkok {
+//     width: 100%;
+//     display: flex;
+//     margin-bottom: 96px;    
+
+//     &__kub {
+//         width: 283px;
+//         height: 43px;
+//         border: 1px solid $bkok-gray;
+//         padding: 14.5px;
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: space-around;
+//         align-items: center;
+//     }
+
+//     &__left-kub {
+//         width: 10px;
+//         height: 10px;
+//         border-top: 2px solid $bkok-black;
+//         border-left: 2px solid $bkok-black;
+//         transform: rotateY(0deg) rotate(-45deg); 
+//         cursor: pointer;
+//     }
+
+//     &__number {
+//         padding: 0;
+//     }
+
+
+//     &__number li {
+//         margin-left: 3px;
+//         display: inline-block;       
+//         @include txt-mix (16px, 300, 19px, $bkok-gray)
+//     }
+
+
+//     &__number li:nth-last-child(1) {
+//          margin-right: 9px;
+//     }
+    
+
+
+//     &__point {
+//         width: 30px;
+//         display: flex;
+//         flex-direction: row;
+
+
+//         &__item {
+//             width: 3px;
+//             height: 3px;
+//             border: 1px solid $bkok-gray;
+//             background: $bkok-gray;
+//             border-radius: 100%;
+//             margin-left: 2px;
+//         }
+//     }
+
+
+//     &__raight-kub {
+//         width: 10px;
+//         height: 10px;
+//         border-top: 2px solid $bkok-black;
+//         border-right: 2px solid $bkok-black;
+//         transform: rotateY(0deg) rotate(45deg);
+//         cursor: pointer; 
+//     }
+// }

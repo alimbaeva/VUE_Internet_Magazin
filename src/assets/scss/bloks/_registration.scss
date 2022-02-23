@@ -1,0 +1,86 @@
+@import '../vars';
+
+.registration__section {
+    display: flex;
+    justify-content: space-between;
+
+    &_join-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &_join-label {
+        margin-bottom: 21px;
+        @include txt-mix (16px, 300,19px, $cart-txt2)
+    }
+
+    &_join-label-radio {
+        font-size: 11px;
+        line-height: 13px;
+    }
+
+    &_form-input {
+        width: 365px;
+        height: 45px;
+        margin-bottom: 20px;
+        padding: 12px 16px;
+        @include txt-mix (13px, 300,16px, $registration-txt)
+    }
+
+    &_form-radio {
+        margin: 31.5px 0 35px;
+    }
+
+    &_join-label-radio {
+        margin-right: 20px;
+        font-size: 11px;
+        line-height: 13px;
+    }
+
+    &_form-text {
+        width: 359px;
+        @include txt-mix (13px, 300,16px, $registration-txt)
+    }
+
+    &_txt-h2 {
+        margin: 0 0 20px 0;         
+        
+    }
+
+    &_txt-p {
+        width: 652px;
+    }
+
+    &_txt-li {
+        padding-left: 22px;
+        margin-bottom: 18px;
+        list-style: url(/img/galochka.svg);
+    }
+
+    &_form-button {
+        color: $color-red;
+        margin-top: 39px;
+        cursor: pointer;
+        @include btn-mix (167px, 50px, 1px solid $color-red, $white, none)
+    }
+
+    &_form-button:hover {
+        color: $white;
+        margin-top: 39px;
+        cursor: pointer;
+        transition: .9s;
+        @include btn-mix (167px, 50px, 1px solid $color-red, $color-red, none)
+    }
+
+    &_form-button::after {
+        content: url(/img/strelka.svg);
+        margin-left: 20px;
+    }
+    
+
+}
+
+.regis-txt {
+    @include txt-mix (24px, 300, 29px, $bkok-black);
+}
+

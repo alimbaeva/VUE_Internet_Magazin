@@ -1,0 +1,150 @@
+@import '../vars';
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 25px ;
+    }
+
+    .header1__nav_menu-items {
+        left: -450%;
+        top: 230%;
+    }
+    .header2 {
+        height: 370px;
+        position: relative;
+    
+        &__baner_imeges img {
+            width: 386px;
+            height: 368px;
+            position: absolute;
+            top: 2px;
+        }
+
+        &__baner_text { 
+            margin-top: 19%;
+            margin-left: 60%; 
+        }
+        
+
+        &__baner_cube-h2 {
+            font-size: 30px;
+            line-height: 52px;
+        }
+
+        &__baner_cube-h1 {
+            font-size: 22px;
+            line-height: 24px;
+        }
+       
+    }
+
+    .section-foto {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 167px);
+
+
+        &__item-txt {
+            margin-top: 55px;
+        }
+
+
+        &__text {
+            font-size: 14px;
+        }
+
+        &__h2 {
+            font-size: 20px;
+        }
+    }
+
+
+    .catalog {
+        justify-content: space-around;
+
+        &__link {
+            width: 350px;
+        }
+    }
+
+    .fetured__oll-page {
+        margin-left: 35%;
+    }
+
+    .quality {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 30px;
+
+        &__secton {
+            max-width: 360px;
+            margin-top: 20px;
+
+            padding: 3px;
+        }
+    }
+
+    .subscribe__in {
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .subscribe__int {
+        margin-left: 0;
+        margin-bottom: 210px;
+    }
+
+    .filter {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .cart__two {
+        justify-content: space-around;
+    }
+
+    .block-main__adress-form {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .block-main__form-input {
+        margin-left: 0;
+    }
+
+    .block-main__checkout {
+        margin-top: 57px;
+        margin-left: 7px;
+    }
+
+    .block-main__adress-title {
+        margin-left: 0;
+    }
+
+    .registration__section {
+
+        &_form-input {
+            width: 355px;
+            margin-right: 7px;
+        }
+
+        &_txt {
+            padding: 5px;
+        }
+
+        &_txt-h2, &_txt-p,&_txt-li {
+            font-size: 16px;
+        }
+
+        &_txt-p {
+            width: 352px;
+        }
+
+        &_form-button {
+            margin-bottom: 96px;
+        }
+       
+    }
+
+}
+

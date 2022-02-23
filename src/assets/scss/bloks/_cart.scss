@@ -1,0 +1,352 @@
+@import '../vars';
+
+.cart__two {
+    margin-top: 96px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.block-main-2 {
+    width: 20%;
+}
+
+.block-main {
+    &__card {
+        max-width: 652px;
+        height: 306px;
+        margin-bottom: 42px; 
+        display: flex;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    }
+
+    &__img {
+        width: 262px;
+        height: 306px;
+    }
+
+    &__praise {
+        display: flex;
+    }
+
+    &__text {
+        padding: 21px 31px;
+    }
+    &__title {
+        margin: 0 0 42px;
+        width: 200px;
+        @include txt-mix (24px, 400, 29px, $bkok-black)
+
+    }
+
+    &__p {
+        margin: 0 0 6px;
+        @include txt-mix (22px, 400, 26px, $cart-txt)
+    }
+
+    &__Quantity {
+        display: flex;
+    }
+
+    &__input-number {
+        margin-left: 40px;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        @include btn-mix (43px, 28px, 1px solid #EAEAEA, $white, 4px 12px)
+    }
+
+
+    &__input-number:hover {
+        border: 1px solid $color-red;
+    }
+
+    &__close {
+        padding:25px 14px 0 70px;
+    }
+
+    &__close-X {
+        cursor: pointer;
+    }
+
+    // -------
+
+    &__adress-form{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+    &__adress-form{
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+            }
+        
+            &__adress-title{
+                margin: 20px 0 20px  175px;        
+                @include txt-mix (16px, 300, 19px, $cart-txt2)
+            }
+        
+            &__form-input{
+                width: 359px;
+                height: 40px;
+                margin:0 0 20px 21%;
+                padding: 12px 16px;
+                font-weight: 300;
+                font-size: 13px;
+                line-height: 16px;
+                color: $cart-txt2;
+            }
+        
+            &__form-input:hover {
+                color: #B1B1B1;
+            }
+        
+            &__from-button {
+                display: flex;
+                justify-content: center;
+                cursor: pointer;       
+                @include btn-mix (150px, 34px, 1px solid #A4A4A4, $white, 8px)
+            }
+        
+            &__from-button:hover {
+                color: $white;
+                border: 1px solid $color-red;
+                background: $color-red;
+                transition: .8s;
+            }
+        
+            &__button-p {
+                margin: 0;       
+            }
+        
+            // ------------------
+        
+            &__checkout {
+                margin: 78.5px 0 0 93px;
+                display: flex;
+                justify-content: flex-end;
+                @include btn-mix (360px, 214px, none, #F5F3F3, 43px)
+            
+            }
+        
+            &__checkout-total {
+                width: 275px;
+            }
+        
+            &__checkout-sub {
+                margin: 0 0 12px 182px;
+                @include txt-mix (11px, 400, 13px, #4A4A4A)
+            }
+        
+        
+            &__checkout-grand {
+                margin: 0 0 0 119px;
+                @include txt-mix (16px, 400, 19px, $cart-txt2)
+            }
+        
+            &__line {
+                width: 275px;
+                height: 2px;
+                margin: 21px 0 17px 0;
+                background: #E2E2E2;
+            }
+        
+            &__checkout-button {
+                cursor: pointer;
+                @include txt-mix (16px, 300, 19px, rgb(0, 0, 0));
+                @include btn-mix (273px, 50px, 1px solid #a4a4a4, $white, none)
+            }
+            &__checkout-button:hover {
+                color: $white;
+                background: $color-red;
+                transition: .8s;
+            }
+}
+
+// .block-main {
+
+//     &__card {
+//         width: 652px;
+//         height: 306px;
+//         margin-bottom: 42px; 
+//         display: flex;
+//         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+//     }
+
+//     &__img {
+//         width: 262px;
+//         height: 306px;
+//     }
+
+//     &__praise {
+//         display: flex;
+//     }
+
+//     &__text {
+//         padding: 21px 31px;
+//     }
+
+//     &__title {
+//         margin: 0 0 42px;
+//         width: 200px;
+//         @include txt-mix (24px, 400, 29px, $bkok-black)
+
+//     }
+
+//     &__p {
+//         margin: 0 0 6px;
+//         @include txt-mix (22px, 400, 26px, $cart-txt)
+//     }
+
+//     &__Quantity {
+//         display: flex;
+//     }
+
+//     &__input-number {
+//         margin-left: 40px;
+//         font-size: 18px;
+//         display: flex;
+//         justify-content: center;
+//         cursor: pointer;
+//         @include btn-mix (43px, 28px, 1px solid #EAEAEA, $white, 4px 12px)
+//     }
+
+
+//     &__input-number:hover {
+//         border: 1px solid $color-red;
+//     }
+
+//     &__close {
+//         padding:25px 14px 0 70px;
+//     }
+
+//     &__close-X {
+//         cursor: pointer;
+//     }
+
+//     // --------------
+
+//     &__adress-form{
+//         width: 40%;
+//         display: flex;
+//         flex-direction: column;
+//     }
+
+//     &__adress-title{
+//         margin: 20px 0 20px  175px;        
+//         @include txt-mix (16px, 300, 19px, $cart-txt2)
+//     }
+
+//     &__form-input{
+//         width: 359px;
+//         height: 40px;
+//         margin:0 0 20px 21%;
+//         padding: 12px 16px;
+//         font-weight: 300;
+//         font-size: 13px;
+//         line-height: 16px;
+//         color: $cart-txt2;
+//     }
+
+//     &__form-input:hover {
+//         color: #B1B1B1;
+//     }
+
+//     &__from-button {
+//         display: flex;
+//         justify-content: center;
+//         cursor: pointer;       
+//         @include btn-mix (150px, 34px, 1px solid #A4A4A4, $white, 8px)
+//     }
+
+//     &__from-button:hover {
+//         color: $white;
+//         border: 1px solid $color-red;
+//         background: $color-red;
+//         transition: .8s;
+//     }
+
+//     &__button-p {
+//         margin: 0;       
+//     }
+
+//     // ------------------
+
+//     &__checkout {
+//         display: flex;
+//         justify-content: flex-end;
+//         @include btn-mix (360px, 214px, none, #F5F3F3, 43px)
+    
+//     }
+
+//     &__checkout-total {
+//         width: 275px;
+//     }
+
+//     &__checkout-sub {
+//         margin: 0 0 12px 182px;
+//         @include txt-mix (11px, 400, 13px, #4A4A4A)
+//     }
+
+
+//     &__checkout-grand {
+//         margin: 0 0 0 119px;
+//         @include txt-mix (16px, 400, 19px, $cart-txt2)
+//     }
+
+//     &__line {
+//         width: 275px;
+//         height: 2px;
+//         margin: 21px 0 17px 0;
+//         background: #E2E2E2;
+//     }
+
+//     &__checkout-button {
+//         cursor: pointer;
+//         @include txt-mix (16px, 300, 19px, rgb(0, 0, 0));
+//         @include btn-mix (273px, 50px, 1px solid #a4a4a4, $white, none)
+//     }
+
+    // &__checkout-button:hover {
+    //     color: $white;
+    //     background: $color-red;
+    //     transition: .8s;
+    // }
+
+
+// }
+
+.cart-form {
+    margin-bottom: 128px;
+
+
+    &__button {
+        cursor: pointer;
+        @include txt-mix (14px, 300, 17px, $bkok-black);
+        @include btn-mix (235px, 50px, 1px solid #A4A4A4, $white, none)
+    }
+
+    &__button:first-child {
+        margin-top: 72px;
+        margin-right: 180px;
+        margin-bottom: 40px;
+    }
+
+    &__button:hover {
+        color: $white;
+        border: 1px solid $color-red;
+        background: $color-red;
+        transition: .8s;
+    }
+}
+
+
+.dixtanse-cart {
+    margin-top: 96px;
+}
+
+strong {
+    color: $color-red;
+}

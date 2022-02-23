@@ -1,0 +1,27 @@
+$color-red:#F16D7F;
+$white: #ffffff;
+$bkok-black: #000000;
+$bkok-gray: #EBEBEB;
+$dark-gray: #6F6E6E;
+$footer-white: #FBFBFB;
+$banner-gray: #F7F7F7;
+$cart-txt:  #575757;
+$cart-txt2: #222222;
+$registration-txt: #B1B1B1;
+
+
+@mixin txt-mix($fs, $fw, $fh, $col)
+{
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $fh;
+    color: $col;
+}
+
+@mixin btn-mix($wid, $hei, $bor, $bacg, $pad) {
+    width: $wid;
+    height: $hei;
+    border: $bor;
+    background: $bacg;
+    padding: $pad;
+}

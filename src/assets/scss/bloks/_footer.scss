@@ -1,0 +1,151 @@
+@import '../vars';
+
+.qualitys {
+    margin-top: 109px;
+}
+
+
+.footer {    
+    background: #222224;
+}
+
+.quality {
+    min-height: 341px;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
+
+    &__secton {
+        max-width: 360px;
+        padding: 7px;
+        // height: 164px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__h3 {
+        padding: 0;
+        margin-top: 28.07px;
+        margin-bottom: 16px;
+        @include txt-mix (19.96px, 400, 24px, $footer-white)
+    }
+
+    &__p {
+        text-align: center;        
+        @include txt-mix (13.97px, 300, 17px, $footer-white)
+    }
+}
+
+.subscribe {
+    min-height: 448px;
+    background-image:
+    linear-gradient(
+    90deg, 
+    rgba(244, 244, 244, 0.7) 0%,
+    rgba(244, 244, 244, 0.7) 100%),
+    url('../img/subscribe-fon.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+
+    & .container {
+        width: 1114px;
+    }
+
+    &__in {
+        padding-top: 155px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__img {
+        width: 359.45px;
+        height: 225px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__img-txt {
+        text-align: center;
+        @include txt-mix (20px, 400, 24px, $bkok-black)
+    }
+
+    &__int {
+        margin-left: auto;
+    }
+
+    &__h2 {
+        text-align: center;
+        @include txt-mix (24px, 700, 40.13%, $bkok-black)
+        
+    }
+
+    &__txt {
+        margin: 0;
+        text-align: center;
+        padding-bottom: 32px;
+        @include txt-mix (18px, 400, 31.13%, $bkok-black)
+    }
+
+    &__email {
+        margin: 0;
+        height: 49px;
+        width: 256px;
+        border: none;
+        padding-left: 20px;
+        border-radius: 22px 0 0 22px;
+        background: #E1E1E1;
+    }
+
+    &__integer {
+        margin-left: -3px;         
+        border-radius: 0 22px  22px 0; 
+        border: 1px solid $color-red;      
+        color: $color-red;
+        cursor: pointer;
+        @include btn-mix (100px, 49px, none, $white, 0 10px 0 0)
+    }
+
+    &__integer:hover {
+        margin-left: -3px; 
+        border-radius: 0 22px  22px 0;       
+        color: white;
+        cursor: pointer;
+        transition: .8s;
+        @include btn-mix (100px, 49px, none, $color-red, 0 10px 0 0)
+    }
+
+    &__form {
+        display: flex;
+        
+    }
+}
+
+.links {
+    min-height: 79px;
+}
+
+.links-sos {
+    padding: 1.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__copirite {
+        @include txt-mix (16px, 400, 19px, $footer-white)
+    }
+
+    &__icon-color-1:hover {
+        fill: #F16D7F;
+        transition: .5s;
+     }
+
+    &__icon-color-1:hover + &__icon-color-2 {
+        fill: white;
+        transition: .5s;
+    }
+}
+
